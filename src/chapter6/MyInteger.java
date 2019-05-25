@@ -1,28 +1,28 @@
 package chapter6;
 
 public class MyInteger {
-	int value;
+	private int value;
 	
-	MyInteger(int value)
+	public MyInteger(int value)
 	{
 		this.value = value;
 	}
-	MyInteger add(MyInteger b)
+	public MyInteger add(MyInteger b)
 	{
 		int sum = this.value + b.value;
 		return new MyInteger(sum);
 	}
-	MyInteger sub(MyInteger b)
+	public MyInteger sub(MyInteger b)
 	{
 		int sub = this.value - b.value;
 		return new MyInteger(sub);
 	}
-	MyInteger mult(MyInteger b)
+	public MyInteger mult(MyInteger b)
 	{
 		int result = this.value *b.value;
 		return new MyInteger(result);
 	}
-	MyInteger div(MyInteger b)
+	public MyInteger div(MyInteger b)
 	{
 		int result = this.value / b.value;
 		return new MyInteger(result);

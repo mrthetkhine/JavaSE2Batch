@@ -1,8 +1,8 @@
 package chapter6;
 
 public class Stack {
-	String[] values;
-	int top = -1;
+	private String[] values;
+	private int top = -1;
 	
 	Stack(int size)
 	{
@@ -36,7 +36,14 @@ public class Stack {
 	{
 		return this.top+1;
 	}
-	
+	/*
+	public String[] getValues() {
+		return values;
+	}
+	public void setValues(String[] values) {
+		this.values = values;
+	}
+	*/
 	public static void main(String[]args)
 	{
 		Stack myStack = new Stack(5);
@@ -55,6 +62,7 @@ public class Stack {
 		}
 		
 		Stack stackTwo = new Stack(10);
+		Integer myInt;
 		
 	}
 }
