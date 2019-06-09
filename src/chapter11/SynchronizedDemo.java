@@ -4,11 +4,11 @@ class Counter
 {
 	int counter = 0;
 	
-	void inc()
+	synchronized void inc()
 	{
 		counter = counter +1;
 	}
-	void dec()
+	synchronized void dec()
 	{
 		counter = counter -1;
 	}
@@ -32,7 +32,7 @@ class IncThread extends Thread
 	{
 		for(int i=0; i< 15;i++)
 		{	
-			synchronized(counter)
+			//synchronized(counter)
 			{
 				counter.inc();
 			}
@@ -66,7 +66,7 @@ class DecThread extends Thread
 	{
 		for(int i=0; i< 15;i++)
 		{	
-			synchronized(counter)
+			//synchronized(counter)
 			{
 				counter.dec();
 			}
