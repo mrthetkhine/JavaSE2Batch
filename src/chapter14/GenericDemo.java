@@ -7,7 +7,7 @@ class Generic<T>
 	{
 		this.obj = obj;
 	}
-	
+	 
 	T getObj()
 	{
 		return this.obj;

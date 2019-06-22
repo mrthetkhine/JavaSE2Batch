@@ -11,7 +11,7 @@ class Bounded<T extends Number>
 	{
 		System.out.println("Type of t "+t.getClass().getName());
 		return this.obj.doubleValue()+ t.doubleValue();
-	}
+	} 
 	public static void show(Bounded<? extends Double> d)
 	{
 		System.out.println("D "+d.getClass().getName());

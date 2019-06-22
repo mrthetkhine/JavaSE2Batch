@@ -32,7 +32,7 @@ public class GenericInheritanceDemo {
 		Child<Integer> intC = new Child<>(3);
 		Child<String> str = new Child<>("Hello");
 		System.out.println(str.getObj());
-		
+		 
 		intC = (Child)str;
 		
 		System.out.println("Class of intC "+intC.getClassName());

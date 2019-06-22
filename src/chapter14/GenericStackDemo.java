@@ -15,7 +15,7 @@ class Stack<T>
 	public T pop()
 	{
 		return this.elements[top--];
-	}
+	} 
 }
 public class GenericStackDemo {
 	public static void main(String[]args)

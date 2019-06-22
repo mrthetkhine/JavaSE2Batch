@@ -13,5 +13,5 @@ public class GenericMethod {
 		System.out.println(add(10.2,20.8));
 		//System.out.println(add(10,"Hello"));
 	}
-
+ 
 }

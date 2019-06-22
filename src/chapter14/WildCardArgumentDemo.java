@@ -26,7 +26,7 @@ class Stats<T extends Number>
 		{
 			return false;
 		}
-	}
+	} 
 }
 public class WildCardArgumentDemo {
 	public static void main(String[]args)
