@@ -9,6 +9,7 @@ public class MapDemo {
 		List<Customer> customers = Customer.getAllCustomer();
 		List<String> customerNames = customers
 		.stream()
+		.filter(cus->cus.age> 20)
 		.map(cus-> ((cus.gender == Gender.MALE) ? "Mr "+cus.name : "Mrs "+ cus.name))
 		.collect(Collectors.toList());
 		
