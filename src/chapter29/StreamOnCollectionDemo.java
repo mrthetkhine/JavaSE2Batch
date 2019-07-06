@@ -5,30 +5,15 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-class Customer
-{
-	int id;
-	String name;
-	int age;
-	Customer(int id, String name, int age)
-	{
-		this.id = id;
-		this.name = name;
-		this.age = age;
-	}
-	public void receiveGift()
-	{
-		System.out.println("You receive gift "+this.name);
-	}
-}
+
 public class StreamOnCollectionDemo {
 	public static void main(String[]args)
 	{
 		List<Customer> customers = new ArrayList<Customer>();
-		customers.add(new Customer(1,"One",20));
-		customers.add(new Customer(2,"Two",10));
-		customers.add(new Customer(3,"Three",25));
-		customers.add(new Customer(4,"Four",35));
+		customers.add(new Customer(1,"One",20,Gender.FEMALE));
+		customers.add(new Customer(2,"Two",10,Gender.MALE));
+		customers.add(new Customer(3,"Three",25,Gender.FEMALE));
+		customers.add(new Customer(4,"Four",35, Gender.FEMALE));
 		
 		List<String> customerNames = customers
 			.stream()
@@ -46,6 +31,11 @@ public class StreamOnCollectionDemo {
 								.reduce((a,b)->{
 									return a.age> b.age ? a : b;
 								});
+		customers
+			.stream()
+			.forEach(cus->{
+				System.out.println("Custom action "+cus.name);
+			});
 		System.out.println(max.get().name);
 	}
 
