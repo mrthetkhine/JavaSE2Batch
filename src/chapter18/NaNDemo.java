@@ -16,6 +16,7 @@ public class NaNDemo {
 		System.out.println(zero1);
 		System.out.println(zero2);
 		
+		
 		System.out.println(zero1 == zero2);
 		
 		Integer myInt = Integer.parseInt("200");

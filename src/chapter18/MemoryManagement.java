@@ -11,6 +11,7 @@ public class MemoryManagement {
 		System.out.println("Total Memory "+runtime.totalMemory());
 		System.out.println("Free Memory "+runtime.freeMemory());
 		
+		
 		arr = null;
 		System.gc();
 		System.out.println("Total Memory "+runtime.totalMemory());

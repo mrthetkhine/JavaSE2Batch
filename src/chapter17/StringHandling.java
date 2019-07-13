@@ -16,7 +16,7 @@ public class StringHandling {
 		{
 			//str+= "Hello World";
 			buffer.append("Hello World");
-		}
+		} 
 		str = str.replace("World", "NewWorld");
 		System.out.println(str);
 		
